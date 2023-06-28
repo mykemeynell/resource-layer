@@ -1,0 +1,10 @@
+<?php
+
+namespace %NAMESPACE%;
+
+use %BASE_RESOURCE_NAMESPACE%\%BASE_RESOURCE_CLASS_NAME%;
+
+class %CLASS_NAME% extends %BASE_RESOURCE_CLASS_NAME%
+{
+    // .
+}
