@@ -2,5 +2,5 @@
 
 namespace ResourceLayer\Exceptions;
 
-class ResourceControllerTypeInvalidException extends \Exception
+final class ResourceControllerTypeInvalidException extends \Exception
 {}

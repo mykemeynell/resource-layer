@@ -2,5 +2,5 @@
 
 namespace ResourceLayer\Exceptions;
 
-class NoResourceControllerSetException extends \Exception
+final class NoResourceControllerSetException extends \Exception
 {}
