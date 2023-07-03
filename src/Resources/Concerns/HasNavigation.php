@@ -51,6 +51,8 @@ trait HasNavigation
         $className = class_basename(static::class);
         $suffix = config('resource-layer.resource_suffix', 'Resource');
 
-        return Str::plural(Str::beforeLast($className, $suffix));
+        $words = preg_split("/(?=[A-Z])/", Str::beforeLast($className, $suffix));
+
+        return Str::plural(implode(' ', $words));
     }
 }
