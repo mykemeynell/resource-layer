@@ -32,7 +32,7 @@ trait HasResourceType
         }
 
         $className = Str::afterLast(static::class, '\\');
-        return Str::slug(Str::beforeLast($className,
+        return Str::kebab(Str::beforeLast($className,
             config('resource-layer.resource_suffix', 'Resource')
         ));
     }
